@@ -14,13 +14,9 @@ def PasswordGenerator():
     while True:
         display_menu()
         desired_length = int(input('Enter your desired password length: '))
-        #if isinstance(desired_length,int) == False: I dont know why this numbers are inputting as strings, Also you should find out how to actually verify the inputs
-           # print('Please enter an integer value')
-           # break
         if desired_length < 0:
             print('Please enter a valid length greater than zero')
             break
-        
         lastname = str(input('Enter your last name: '))
         if lastname[0].isupper() == False:
             print('Please enter your last name with the first letter capitalized')
